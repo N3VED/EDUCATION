@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Fragments</string>
+    <string name="greetings_string">Приветствую вас, прошу заполните необходимые данные</string>
+    <string name="hint_name">Имя</string>
+    <string name="hint_surname">Фамилия</string>
+    <string name="button_save_text">Сохранить</string>
+    <string name="name_surname_string">Приветствую тебя, %1$s %2$s, тебе необходимо ответить на три вопроса</string>
+    <string name="answer_result_text">Ты ответил правильно на %1$s/3 вопросов</string>
+    <string name="first_question_text_string">Сколько материков на планете Земля?</string>
+    <string name="third_question_text_string">В каком году было отменено крепостное право?</string>
+    <string name="second_question_text_string">2 + 2 = ?</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_1864">1864</string>
+    <string name="button_answer_text">Отправить ответы</string>
+    <string name="back_string">Назад</string>
+    <string name="back_to_start_string">Начать заново</string>
+</resources>

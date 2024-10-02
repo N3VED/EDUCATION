@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuestionsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/name_surname_text"
+            style="@style/textStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_surname_string"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/first_question_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            app:layout_constraintTop_toBottomOf="@+id/name_surname_text">
+
+            <TextView
+                android:id="@+id/first_question_text"
+                style="@style/textStyle.Questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/first_question_text_string" />
+
+            <RadioButton
+                android:id="@+id/answer_first_first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/_4" />
+
+            <RadioButton
+                android:id="@+id/answer_first_second"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/_5" />
+
+            <RadioButton
+                android:id="@+id/answer_first_third"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/_6" />
+
+            <RadioButton
+                android:id="@+id/answer_first_four"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/_7" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/second_question_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            app:layout_constraintTop_toBottomOf="@+id/first_question_radio_group">
+
+            <TextView
+                android:id="@+id/second_question_text"
+                style="@style/textStyle.Questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/second_question_text_string" />
+
+            <RadioButton
+                android:id="@+id/answer_second_first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/_1" />
+
+            <RadioButton
+                android:id="@+id/answer_second_second"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/_2" />
+
+            <RadioButton
+                android:id="@+id/answer_second_third"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/_3" />
+
+            <RadioButton
+                android:id="@+id/answer_second_four"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/_4" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/third_question_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            app:layout_constraintTop_toBottomOf="@+id/second_question_radio_group">
+
+            <TextView
+                android:id="@+id/third_question_text"
+                style="@style/textStyle.Questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/third_question_text_string" />
+
+            <RadioButton
+                android:id="@+id/answer_third_first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/_1" />
+
+            <RadioButton
+                android:id="@+id/answer_third_second"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/_2" />
+
+            <RadioButton
+                android:id="@+id/answer_third_third"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/_3" />
+
+            <RadioButton
+                android:id="@+id/answer_third_four"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/_1864" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:enabled="false"
+            android:text="@string/button_answer_text"
+            app:layout_constraintTop_toBottomOf="@id/third_question_radio_group" />
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/default_margin"
+            android:text="@string/back_string"
+            app:layout_constraintTop_toBottomOf="@id/third_question_radio_group" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

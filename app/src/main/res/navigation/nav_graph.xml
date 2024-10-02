@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/greetingFragment">
+
+    <fragment
+        android:id="@+id/greetingFragment"
+        android:name="com.example.fragments.GreetingFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_greeting">
+        <action
+            android:id="@+id/action_greetingFragment_to_questionsFragment"
+            app:destination="@id/questionsFragment"
+            app:enterAnim="@android:animator/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/questionsFragment"
+        android:name="com.example.fragments.QuestionsFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_questions">
+        <action
+            android:id="@+id/action_questionsFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:enterAnim="@android:animator/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_questionsFragment_to_greetingFragment"
+            app:destination="@id/greetingFragment"
+            app:enterAnim="@android:animator/fade_in"
+            app:popUpTo="@id/greetingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.fragments.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result">
+        <action
+            android:id="@+id/action_resultFragment_to_greetingFragment"
+            app:destination="@id/greetingFragment"
+            app:enterAnim="@android:animator/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/greetingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
