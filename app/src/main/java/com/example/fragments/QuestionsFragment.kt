@@ -77,6 +77,7 @@ class QuestionsFragment : Fragment() {
 
     private fun back() {
         findNavController().navigate(R.id.action_questionsFragment_to_greetingFragment)
-        mViewModel.wipeLiveData()
+        mViewModel.wipeLiveDataName()
+        mViewModel.wipeLiveDataAnswers()
     }
 }

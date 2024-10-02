@@ -37,7 +37,8 @@ class ResultFragment : Fragment() {
         textThird.text = getString(R.string.answer_result_text, mViewModel.result.value.toString())
 
         backToStartButton.setOnClickListener {
-            back()
+            findNavController().navigate(R.id.action_resultFragment_to_questionsFragment)
+            mViewModel.wipeLiveDataAnswers()
         }
 
         return view
@@ -45,6 +46,7 @@ class ResultFragment : Fragment() {
 
     private fun back() {
         findNavController().navigate(R.id.action_resultFragment_to_greetingFragment)
-        mViewModel.wipeLiveData()
+        mViewModel.wipeLiveDataName()
+        mViewModel.wipeLiveDataAnswers()
     }
 }

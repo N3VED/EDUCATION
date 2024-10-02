@@ -94,9 +94,12 @@ class MyViewModel : ViewModel() {
         setResult(result)
     }
 
-    fun wipeLiveData() {
+    fun wipeLiveDataName() {
         _name.value = ""
         _surname.value = ""
+    }
+
+    fun wipeLiveDataAnswers() {
         _firstQuestionAnswer.value = ""
         _secondQuestionAnswer.value = ""
         _thirdQuestionAnswer.value = ""

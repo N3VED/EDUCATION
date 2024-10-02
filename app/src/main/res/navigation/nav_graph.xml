@@ -46,5 +46,10 @@
             app:exitAnim="@android:anim/fade_out"
             app:popUpTo="@id/greetingFragment"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_resultFragment_to_questionsFragment"
+            app:destination="@id/questionsFragment"
+            app:popUpTo="@id/questionsFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>
