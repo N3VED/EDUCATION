@@ -1,5 +1,6 @@
 package com.example.fragments
 
+import android.animation.ObjectAnimator
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -33,6 +34,10 @@ class QuestionsFragment : Fragment() {
         val secondQuestionRadioGroup =
             view.findViewById<RadioGroup>(R.id.second_question_radio_group)
         val thirdQuestionRadioGroup = view.findViewById<RadioGroup>(R.id.third_question_radio_group)
+
+        animateRadioGroup(firstQuestionRadioGroup)
+        animateRadioGroup(secondQuestionRadioGroup)
+        animateRadioGroup(thirdQuestionRadioGroup)
 
         requireActivity().onBackPressedDispatcher.addCallback(
             viewLifecycleOwner,
@@ -73,6 +78,13 @@ class QuestionsFragment : Fragment() {
         }
 
         return view
+    }
+
+    private fun animateRadioGroup(radioGroup: RadioGroup) {
+        radioGroup.animate().apply {
+            duration = 1000
+            alpha(1F)
+        }
     }
 
     private fun back() {

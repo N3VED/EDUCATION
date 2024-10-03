@@ -37,12 +37,14 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
 }
 
 dependencies {
     val nav_version = "2.8.1"
     val lifecycle_version = "2.8.5"
     val arch_version = "2.2.0"
+    val lottieVersion = "6.5.2"
     // Jetpack Compose integration
     implementation("androidx.navigation:navigation-compose:$nav_version")
 
@@ -53,6 +55,7 @@ dependencies {
     // Feature module support for Fragments
     implementation("androidx.navigation:navigation-dynamic-features-fragment:$nav_version")
 
+    implementation ("com.airbnb.android:lottie:$lottieVersion")
     // Testing Navigation
     androidTestImplementation("androidx.navigation:navigation-testing:$nav_version")
     // ViewModel
